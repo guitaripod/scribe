@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scribe</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Scribe</h1>
+        <div class="status" id="status">
+          <span class="status-dot"></span>
+          <span class="status-text">Checking...</span>
+        </div>
+      </header>
+
+      <div class="toggle-row">
+        <label for="enabled">Enable Scribe</label>
+        <input type="checkbox" id="enabled" checked />
+      </div>
+
+      <div class="setting-row">
+        <label for="model">Model</label>
+        <select id="model">
+          <option value="gemma3:4b">gemma3:4b</option>
+        </select>
+      </div>
+
+      <div class="setting-row">
+        <label for="url">Ollama URL</label>
+        <input type="text" id="url" value="http://localhost:11434" />
+      </div>
+
+      <footer>
+        <small>Local AI grammar checking</small>
+      </footer>
+    </div>
+
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
