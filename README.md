@@ -1,12 +1,14 @@
 # Scribe
 
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Manifest V3](https://img.shields.io/badge/Chrome-Manifest%20V3-4285f4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/)
+[![Ollama](https://img.shields.io/badge/Ollama-Local%20AI-000000?logo=ollama&logoColor=white)](https://ollama.ai/)
+[![Vite](https://img.shields.io/badge/Vite-6.0-646cff?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![License](https://img.shields.io/github/license/guitaripod/scribe)](LICENSE)
+
 Local AI-powered grammar checking and text rewriting browser extension. Powered by Ollama.
 
-
-
 https://github.com/user-attachments/assets/16fe33e1-cfc2-491f-bc6d-3c38f48cc1c5
-
-
 
 ## Features
 
