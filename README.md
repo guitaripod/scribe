@@ -70,3 +70,31 @@ Click the extension icon to access settings:
 - Enable/disable Scribe
 - Select Ollama model
 - Configure Ollama URL (default: http://localhost:11434)
+
+## Ollama GPU Usage
+
+By default, Ollama keeps models loaded in GPU memory for fast responses. To automatically unload models after a period of inactivity:
+
+**Linux (systemd):**
+
+```bash
+sudo mkdir -p /etc/systemd/system/ollama.service.d
+sudo tee /etc/systemd/system/ollama.service.d/override.conf << 'EOF'
+[Service]
+Environment="OLLAMA_ORIGINS=*"
+Environment="OLLAMA_KEEP_ALIVE=1m"
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart ollama
+```
+
+**macOS:**
+
+```bash
+launchctl setenv OLLAMA_ORIGINS "*"
+launchctl setenv OLLAMA_KEEP_ALIVE "1m"
+```
+
+Then restart Ollama.
+
+This keeps models loaded for 1 minute after the last request, then frees GPU memory. Adjust `1m` to your preference (`5m`, `30s`, `0` for immediate unload).
