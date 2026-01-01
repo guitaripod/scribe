@@ -8,7 +8,7 @@
 
 Local AI-powered grammar checking and text rewriting browser extension. Powered by Ollama.
 
-https://github.com/user-attachments/assets/16fe33e1-cfc2-491f-bc6d-3c38f48cc1c5
+<video src="https://github.com/user-attachments/assets/16fe33e1-cfc2-491f-bc6d-3c38f48cc1c5" width="100%" autoplay loop muted playsinline></video>
 
 ## Features
 
